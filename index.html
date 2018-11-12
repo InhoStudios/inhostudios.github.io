@@ -3,9 +3,50 @@
     <head>
         <meta charset=utf-8>
         <title>InhoStudios</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <link href="settings.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Welcome to insanity</h1>
-        <p>Hello children</p>
+        <!--Page Expolorer (Left tab) -->
+        <style>
+            .custom-restricted-width {
+                /* To limit the menu width to the content of the menu: */
+                display: inline-block;
+                /* Or set the width explicitly: */
+                /* width: 10em; */
+            }
+            </style>
+        <div class="pure-menu custom-restricted-width">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Flickr</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Messenger</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                <li class="pure-menu-item pure-menu-has-children">
+                    <a href="#" id="menuLink1" class="pure-menu-link">More</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Autos</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                        <li class="pure-menu-item pure-menu-has-children">
+                            <a href="#" id="menuLink1" class="pure-menu-link">Even More</a>
+                            <ul class="pure-menu-children">
+                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Foo</a></li>
+                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bar</a></li>
+                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Baz</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--Header-->
+        <div>
+            <h1>InhoStudios</h1>
+            <p>
+                Hello this is a big meme
+            </p>
+        </div>
     </body>
 </html>
