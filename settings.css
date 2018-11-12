@@ -139,10 +139,10 @@ iframe {
 
 @font-face {
     font-family: 'Kollektif';
-    src: 'assets/kollektif.ttf';
+    src: url(assets/Kollektif.ttf);
 }
 
 @font-face {
     font-family: 'Kollektif-bold';
-    src: 'assets/kollektif-bold.ttf';
+    src: url(assets/Kollektif-Bold.ttf);
 }
