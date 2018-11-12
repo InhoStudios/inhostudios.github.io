@@ -117,6 +117,23 @@ iframe {
     font-family: 'Kollektif';
 }
 
+.blog-post {
+	font-size: 0.75cm;
+	font-family: 'Kollektif';
+	align-content: 'left';
+}
+
+.date {
+	font-family: 'Kollektif';
+	font-size: 0.5cm;
+	align-content: 'left';
+}
+
+.post-content{
+	font-family: 'Kollektif';
+	align-content: 'left';
+}
+
 .card-header {
     background-color: white;
 }
