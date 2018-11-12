@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: black;
     max-width: 100vw;
 }
 
@@ -8,6 +8,7 @@ nav {
     box-shadow: 0 0 10px lightgray;
     font-size: 0.5cm;
     font-family: 'kollektif';
+    background-color: lightgrey
 }
 
 .media-link {
@@ -117,11 +118,11 @@ iframe {
 }
 
 .card-header {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .card {
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: #A5FFE8;
 }
 
