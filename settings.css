@@ -165,7 +165,7 @@ iframe {
 
 @font-face {
     font-family: 'Kollektif';
-	src: local(assets/kollektif),
+	src: local(kollektif),
 		url('assets/kollektif.ttf') format('truetype'),
 		url('assets/kollektif-webfont.woff') format('woff'),
 		url('assets/kollektif-webfont.woff2') format('woff2');
