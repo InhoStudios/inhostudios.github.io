@@ -173,7 +173,8 @@ iframe {
 	src: local(kollektif),
 		url('assets/kollektif.ttf') format('truetype'),
 		url('assets/kollektif-webfont.woff') format('woff'),
-		url('assets/kollektif-webfont.woff2') format('woff2');
+		url('assets/kollektif-webfont.woff2') format('woff2'),
+		url('https://inhostudios.github.io/assets/kollektif.ttf') format('truetype');
 }
 
 @font-face {
