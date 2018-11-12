@@ -126,6 +126,10 @@ iframe {
     box-shadow: #A5FFE8;
 }
 
+.carousel {
+	max-width: 65vw;
+}
+
 .contents {
     font-size : 0.7cm;
     font-family: 'Kollektif';
@@ -139,10 +143,10 @@ iframe {
 
 @font-face {
     font-family: 'Kollektif';
-    src: url('https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/kollektif.ttf');
+    src: url(assets/kollektif.ttf);
 }
 
 @font-face {
     font-family: 'Kollektif-bold';
-    src: url('https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/Kollektif-bold.ttf');
+    src: url(assets/Kollektif-bold.ttf);
 }
