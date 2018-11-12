@@ -8,7 +8,7 @@ nav {
     box-shadow: 0 0 10px lightgray;
     font-size: 0.5cm;
     font-family: 'kollektif';
-    background-color: lightgrey
+    background-color: lightgrey;
 }
 
 .media-link {
@@ -148,13 +148,13 @@ iframe {
 }
 
 .contents {
-    font-size : 2cm;
+    font-size : 0.7cm;
     font-family: 'Kollektif';
 }
 
 .navbar-brand{
     font-family: 'kollektif';
-    font-size : 50px;
+    font-size : 150px;
     color : black;
 }
 
