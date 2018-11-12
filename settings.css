@@ -160,7 +160,10 @@ iframe {
 
 @font-face {
     font-family: 'Kollektif';
-    src: url(assets/kollektif.ttf);
+	src: local(assets/kollektif),
+		url('assets/kollektif.ttf') format('truetype'),
+		url('assets/kollektif-webfont.woff') format('woff'),
+		url('assets/kollektif-webfont.woff2') format('woff2');
 }
 
 @font-face {
