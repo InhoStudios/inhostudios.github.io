@@ -171,13 +171,12 @@ iframe {
 @font-face {
     font-family: 'Kollektif';
 	src: local(kollektif),
-		url('assets/kollektif.ttf') format('truetype'),
-		url('assets/kollektif-webfont.woff') format('woff'),
-		url('assets/kollektif-webfont.woff2') format('woff2'),
-		url('https://inhostudios.github.io/assets/kollektif.ttf') format('truetype');
+		url('https://inhostudios.github.io/assets/kollektif.ttf') format('truetype'),
+		url('https://inhostudios.github.io/assets/kollektif-webfont.woff') format('woff'),
+		url('https://inhostudios.github.io/assets/kollektif-webfont.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Kollektif-bold';
-    src: url(assets/Kollektif-bold.ttf);
+    src: url('https://inhostudios.github.io/assets/Kollektif-bold.ttf') format('truetype');
 }
