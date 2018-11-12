@@ -148,7 +148,7 @@ iframe {
 }
 
 .contents {
-    font-size : 0.7cm;
+    font-size : 2cm;
     font-family: 'Kollektif';
 }
 
@@ -156,6 +156,11 @@ iframe {
     font-family: 'kollektif';
     font-size : 50px;
     color : black;
+}
+
+.portfolio-contents {
+	font-family: 'kollektif';
+	font-size : 0.5cm;
 }
 
 @font-face {
