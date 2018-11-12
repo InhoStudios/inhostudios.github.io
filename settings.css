@@ -139,10 +139,10 @@ iframe {
 
 @font-face {
     font-family: 'Kollektif';
-    src: url(https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/kollektif.ttf);
+    src: url('https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/kollektif.ttf');
 }
 
 @font-face {
     font-family: 'Kollektif-bold';
-    src: url(https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/Kollektif-bold.ttf);
+    src: url('https://github.com/InhoStudios/inhostudios.github.io/tree/master/assets/Kollektif-bold.ttf');
 }
