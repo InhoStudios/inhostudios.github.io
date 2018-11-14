@@ -149,7 +149,8 @@ iframe {
 }
 
 .carousel {
-	max-width: 50vw;
+	max-width: 45vw;
+	align-content: 'center';
 }
 
 .contents {
