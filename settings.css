@@ -27,7 +27,8 @@ nav {
 .footer-link-light {
 	color: lightgray;
     text-decoration: none;
-    font-family: 'Kollektif';
+	font-family: 'Kollektif';
+	font-size: 2em;
 }
 
 .footer-link-light:hover {
@@ -158,9 +159,9 @@ iframe {
     font-family: 'Kollektif';
 }
 
-.navbar-brand{
+.text-primary{
     font-family: 'kollektif';
-    font-size : 150px;
+    font-size : 1cm;
     color : black;
 }
 
