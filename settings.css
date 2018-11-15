@@ -150,7 +150,7 @@ iframe {
 }
 
 .carousel {
-	max-width: 45vw;
+	max-width: 55%;
 	align-content: 'center';
 }
 
@@ -159,10 +159,11 @@ iframe {
     font-family: 'Kollektif';
 }
 
-.text-primary{
+.nav-text{
     font-family: 'kollektif';
-    font-size : 1cm;
-    color : black;
+    font-size : 0.8cm;
+	color : black;
+	margin-top : 0px;
 }
 
 .portfolio-contents {
