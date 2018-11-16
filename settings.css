@@ -1,6 +1,11 @@
 body {
-	background-color: white;
+	background-color: whitesmoke;
     max-width: 100vw;
+}
+
+.white-bg {
+	background-color: white;
+	max-width: 100vw;
 }
 
 nav {
@@ -174,7 +179,7 @@ iframe {
 }
 
 .contact-form{
-	min-height : 800px;
+	min-height : 730px;
 }
 
 @font-face {
