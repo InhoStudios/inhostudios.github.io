@@ -173,6 +173,10 @@ iframe {
 	text-shadow: 5cm;
 }
 
+.contact-form{
+	min-height : 800px;
+}
+
 @font-face {
     font-family: 'Kollektif';
 	src: local(kollektif),
