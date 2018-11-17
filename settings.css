@@ -182,6 +182,10 @@ iframe {
 	min-height : 730px;
 }
 
+.image-round{
+	border-radius : 35px;
+}
+
 @font-face {
     font-family: 'Kollektif';
 	src: local(kollektif),
