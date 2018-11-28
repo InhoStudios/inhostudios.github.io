@@ -186,6 +186,43 @@ iframe {
 	border-radius : 35px;
 }
 
+
+.sidenav {
+    position: fixed;
+    overflow-x: hidden;
+}
+
+@media all and (min-width: 500){
+	.sidenav {
+		height: 100%;
+		width: 16vw;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 25;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+}
+
+@media all and (max-width: 499){
+	.sidenav {
+		height: 100%;
+		width: 0vw;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 25;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+}
+
+.chapnav{
+	font-family: 'Kollektif';
+	font-size: 1cm;
+}
+
 @font-face {
     font-family: 'Kollektif';
 	src: local(kollektif),
