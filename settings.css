@@ -21,13 +21,67 @@ nav {
 	text-align: center;
 	font-family: 'kollektif';
 	background-color: whitesmoke;
+	opacity: 1;
+	animation-name: fadeInOffset;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.2s;
 }
 
 .welcome-small{
 	font-size: 5vh;
 	text-align: center;
 	font-family: 'kollektif';
-	background-color: whitesmoke;
+	background-color: whitesmoke;opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.quickfade{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.6s;
+}
+
+.slowfade{
+	opacity: 1;
+	animation-name: fadeInOffset;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.fadein{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOffset {
+	0%{
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .cover-fill{
