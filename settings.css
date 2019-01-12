@@ -16,6 +16,28 @@ nav {
     background-color: lightgrey;
 }
 
+.welcome{
+	font-size: 10vh;
+	text-align: center;
+	font-family: 'kollektif';
+	background-color: whitesmoke;
+}
+
+.welcome-small{
+	font-size: 5vh;
+	text-align: center;
+	font-family: 'kollektif';
+	background-color: whitesmoke;
+}
+
+.cover-fill{
+	background-color: whitesmoke;
+}
+
+.title{
+	background-color: whitesmoke;
+}
+
 .media-link {
 	width: 50%;
 }
