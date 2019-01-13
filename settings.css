@@ -316,6 +316,11 @@ iframe {
 	font-size: 1cm;
 }
 
+.choke{
+	max-width: 1800px;
+	margin: auto;
+}
+
 @font-face {
     font-family: 'Kollektif';
 	src: local(kollektif),
