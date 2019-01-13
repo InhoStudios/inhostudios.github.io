@@ -20,27 +20,36 @@ nav {
     background-color: lightgrey;
 }
 
+.home{
+	background-image: url('assets/home-bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 .welcome{
 	font-size: 10vh;
 	text-align: center;
 	font-family: 'kollektif';
-	background-color: whitesmoke;
 	opacity: 1;
 	animation-name: fadeInOffset;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1.2s;
+
+	text-shadow: 0 0 20 whitesmoke;
 }
 
 .welcome-small{
 	font-size: 5vh;
 	text-align: center;
 	font-family: 'kollektif';
-	background-color: whitesmoke;opacity: 1;
+	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
+	
+	text-shadow: 0 0 10 whitesmoke;
 }
 
 .quickfade{
@@ -98,6 +107,10 @@ nav {
 
 .media-link {
 	width: 50%;
+}
+
+.home-shadow{
+    box-shadow: 0 0 15px gray;
 }
 
 .site-footer {
