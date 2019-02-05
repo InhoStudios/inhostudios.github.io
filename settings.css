@@ -2,9 +2,70 @@ html{
 	scroll-behavior: smooth;
 }
 
+.night {
+	animation-name: tonight;
+	animation-duration: 5s;
+	background-color: #040018;
+}
+
+.day {
+	animation-name: today;
+	animation-duration: 5s;
+	background-color: whitesmoke;
+}
+
+.dwhite {
+	animation-name: whiteday;
+	animation-duration: 5s;
+	background-color: white;
+}
+
+.nwhite{
+	animation-name: whitenight;
+	animation-duration: 5s;
+	background-color:#040018;
+}
+
+@keyframes tonight{
+	from {
+		background-color: whitesmoke;
+	} to {
+		background-color: #040018;
+	}
+}
+
+@keyframes today {
+	from {
+		background-color: #040018;
+	}
+	to {
+		background-color: whitesmoke;
+	}
+}
+
+@keyframes whitenight{
+	from{
+		background-color: white;
+	} to {
+	  	background-color: #040018;
+  	}
+}
+
+@keyframes whiteday{
+	from{
+		background-color: #040018;
+	} to {
+		background-color: white;
+  	}
+}
+
 body {
 	background-color: whitesmoke;
     max-width: 100vw;
+}
+
+.day-night{
+	background-color: whitesmoke;
 }
 
 .white-bg {
@@ -319,6 +380,30 @@ iframe {
 .choke{
 	max-width: 2160px;
 	margin: auto;
+}
+
+.p1-gradient-bg, .banner-left .primary-btn, .home-about-right .primary-btn, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
+	background: -moz-linear-gradient(0deg, #ff8cc6 0%, #62bdfc 100%);
+	background: -webkit-linear-gradient(0deg, #ff8cc6 0%, #62bdfc 100%);
+	background: -ms-linear-gradient(0deg, #ff8cc6 0%, #62bdfc 100%);
+}
+
+.section-gap {
+	padding: 120px 0;
+}
+
+.single-fact{
+	text-align: center;
+	font-family: 'Kollektif';
+	font-size: 25px;
+	color: whitesmoke;
+}
+
+.counter{
+	text-align: center;
+	font-family: 'Kollektif';
+	font-size: 60px;
+	color: whitesmoke;
 }
 
 @font-face {
