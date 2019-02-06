@@ -96,8 +96,6 @@ nav {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1.2s;
-
-	text-shadow: 2px 2px 4px grey;
 }
 
 .welcome-small{
@@ -109,8 +107,6 @@ nav {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
-	
-	text-shadow: 1px 1px 3px grey;
 }
 
 .quickfade{
