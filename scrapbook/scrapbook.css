@@ -1,0 +1,11 @@
+body{
+     background-image: url('bg.jpg');
+     background-attachment: fixed;
+     background-size: cover;
+    font-size: 20px;
+ }
+
+.subtit{
+    font-size : 25px;
+    font-family: Kollektif;
+}
