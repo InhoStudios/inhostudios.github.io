@@ -5,6 +5,12 @@ body{
     font-size: 20px;
  }
 
+.coverbg{
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .subtit{
     font-size : 25px;
     font-family: Kollektif;
