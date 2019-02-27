@@ -7,8 +7,6 @@ body{
 
 .coverbg{
     background-image: url('bg.jpg');
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .subtit{
