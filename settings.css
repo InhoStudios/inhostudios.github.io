@@ -85,6 +85,7 @@ nav {
 	background-image: url('assets/home-bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
 .welcome{
