@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="220" column="46" selection-start-line="220" selection-start-column="46" selection-end-line="220" selection-end-column="46" />
+            <state relative-caret-position="460">
+              <caret line="77" column="121" selection-start-line="77" selection-start-column="121" selection-end-line="77" selection-end-column="121" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,6 +46,7 @@
                 <element signature="n#style#0;n#a#0;n#div#3;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#5;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#6;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570375406494</updated>
       <workItem from="1570375409559" duration="13901000" />
-      <workItem from="1570391852327" duration="2225000" />
+      <workItem from="1570391852327" duration="2619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16126000" />
+    <option name="totallyTimeSpent" value="16520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -324,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="220" column="46" selection-start-line="220" selection-start-column="46" selection-end-line="220" selection-end-column="46" />
+        <state relative-caret-position="460">
+          <caret line="77" column="121" selection-start-line="77" selection-start-column="121" selection-end-line="77" selection-end-column="121" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -335,6 +336,7 @@
             <element signature="n#style#0;n#a#0;n#div#3;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#5;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#6;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
