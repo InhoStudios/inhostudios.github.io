@@ -55,10 +55,10 @@ html {
 @font-face {
   font-family: 'Kollektif';
   src: local(kollektif),
-  url('assets/Kollektif.ttf') format('truetype'),
-  url('https://inhostudios.github.io/assets/kollektif.ttf') format('truetype'),
-  url('https://inhostudios.github.io/assets/kollektif-webfont.woff') format('woff'),
-  url('https://inhostudios.github.io/assets/kollektif-webfont.woff2') format('woff2');
+  url('../fonts/Kollektif.ttf') format('truetype'),
+  url('https://inhostudios.github.io/fonts/kollektif.ttf') format('truetype'),
+  url('https://inhostudios.github.io/fonts/kollektif-webfont.woff') format('woff'),
+  url('https://inhostudios.github.io/fonts/kollektif-webfont.woff2') format('woff2');
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
