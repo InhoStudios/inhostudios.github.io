@@ -8818,9 +8818,9 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   background: gold;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffc0cb), to(#87cefa));
-  background: linear-gradient(to bottom, #ffc0cb 0%, #87cefa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc0cb', endColorstr='#87cefa', GradientType=0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc0cb), to(#2f4f4f));
+  background: linear-gradient(to bottom, #ffc0cb 0%, #2f4f4f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc0cb', endColorstr='#2f4f4f', GradientType=0);
   z-index: 99999999999;
 }
 
