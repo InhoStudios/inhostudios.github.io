@@ -4962,6 +4962,10 @@ button.close {
 .bg-primary {
   background-color: #79efb4 !important; }
 
+.bg-black{
+  background: #121212;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
