@@ -201,6 +201,9 @@ $(document).ready(function($) {
 	};
 	pageProgress();
 
+	$(window).on("load", function () {
+		$('.preloader').fadeOut(500);
+	});
 
 });
 
