@@ -1495,6 +1495,7 @@ pre {
   .head-height{
     max-height: 50vh;
     height: 50vh;
+    z-index:-3;
   }
 
   .head-pad{
@@ -7298,36 +7299,6 @@ body {
   font-weight: 400;
   color: #8c8c8c;
   position: relative; }
-  body:after {
-    position: fixed;
-    top: -150px;
-    right: -50px;
-    bottom: 0;
-    content: '';
-    width: 400px;
-    height: 600px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    z-index: -1;
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg); }
-  body:before {
-    position: fixed;
-    top: 500px;
-    left: -100px;
-    bottom: 0;
-    content: '';
-    width: 400px;
-    height: 400px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    z-index: -1;
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    transform: rotate(20deg); }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -7735,7 +7706,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    z-index: 0;
+    z-index: -3;
     position: relative; }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
@@ -7848,6 +7819,14 @@ header {
           border: 2px solid white; }
           .owl-carousel.home-slider .owl-dots .owl-dot.active span {
             background: white; }
+
+#particles-js{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  max-height:100vh;
+  z-index: -1; !important
+}
 
 .owl-custom-nav {
   float: right;
