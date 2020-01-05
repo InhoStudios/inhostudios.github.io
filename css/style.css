@@ -4964,7 +4964,7 @@ button.close {
   background-color: #79efb4 !important; }
 
 .bg-black{
-  background: #121212;
+  background: #3a3e46;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7293,7 +7293,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Kollektif';
-  background: #121212;
+  background: #3a3e46;
   font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
@@ -7312,7 +7312,7 @@ body {
     position: fixed;
     top: 0px;
     overflow: hidden;
-    background-color: #121212;
+    background-color: #3a3e46;
     content: "";
     display: table;
     table-layout: fixed;
@@ -7546,9 +7546,9 @@ header {
   cursor: pointer;
   text-decoration: none; }
   .inho-nav-toggle.active i::before, .inho-nav-toggle.active i::after {
-    background: #121212; }
+    background: #3a3e46; }
   .inho-nav-toggle.dark.active i::before, .inho-nav-toggle.dark.active i::after {
-    background: #121212; }
+    background: #3a3e46; }
   .inho-nav-toggle:hover, .inho-nav-toggle:focus, .inho-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -7557,7 +7557,7 @@ header {
     display: inline-block;
     width: 40px;
     height: 2px;
-    color: #121212;
+    color: #3a3e46;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
@@ -7855,19 +7855,19 @@ header {
     outline: none; }
   .btn.btn-primary {
     background: #1f1f1f;
-    border: 1px solid #121212;
+    border: 1px solid #3a3e46;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 1px solid #121212;
+      border: 1px solid #3a3e46;
       background: transparent;
-      color: #121212; }
+      color: #3a3e46; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #ff6ee1;
       background: transparent;
       color: #ff6ee1; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #121212;
+        background: #3a3e46;
         color: #fff; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.8);
@@ -7877,7 +7877,7 @@ header {
     .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
       background: #fff;
       border-color: #fff;
-      color: #121212; }
+      color: #3a3e46; }
 
 .about-section h2 {
   font-weight: 300;
@@ -7961,7 +7961,7 @@ header {
   -webkit-box-shadow: none;
   box-shadow: none;
   line-height: 1.2;
-  color: #121212;
+  color: #3a3e46;
   font-weight: 400;
   text-align: right;
   position: relative;
@@ -8061,7 +8061,7 @@ textarea.form-control {
       .ftco-tab-nav li a.active {
         background: none !important;
         color: black !important;
-        border: 2px solid #121212; }
+        border: 2px solid #3a3e46; }
 
 .ftco-animate {
   opacity: 0;
@@ -8104,7 +8104,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #121212;
+  background: #3a3e46;
   padding: 8em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -8127,7 +8127,7 @@ textarea.form-control {
   .ftco-footer .ftco-heading-2 {
     font-size: 18px;
     font-weight: bold;
-    color: #121212; }
+    color: #3a3e46; }
 
 .ftco-footer-social li {
   list-style: none;
@@ -8383,7 +8383,7 @@ textarea.form-control {
       margin-bottom: 10px;
       color: #b3b3b3; }
       .block-7 .pricing-text li strong {
-        color: #121212; }
+        color: #3a3e46; }
 
 .block-8 .accordion-item .heading {
   font-size: 16px;
@@ -8392,7 +8392,7 @@ textarea.form-control {
   .block-8 .accordion-item .heading > a {
     padding-left: 35px;
     position: relative;
-    color: #121212; }
+    color: #3a3e46; }
     .block-8 .accordion-item .heading > a:before {
       width: 20px;
       height: 20px;
@@ -8647,7 +8647,7 @@ textarea.form-control {
         border-radius: 4px; }
         .comment-list li .comment-body .reply:hover {
           color: #fff;
-          background: #121212; }
+          background: #3a3e46; }
 
 .search-form {
   background: #c5c5c5;
@@ -8695,7 +8695,7 @@ textarea.form-control {
       top: 0;
       color: #ccc; }
   .categories li.active a, .sidelink li.active a {
-    color: #121212;
+    color: #3a3e46;
     font-style: italic; }
 
 #ftco-loader {
