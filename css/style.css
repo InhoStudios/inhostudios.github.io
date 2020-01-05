@@ -7705,7 +7705,7 @@ header {
     background-image: url(../images/wallpaper.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     z-index: -3;
     position: relative; }
     .owl-carousel.home-slider .slider-item {
