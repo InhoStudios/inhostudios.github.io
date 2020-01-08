@@ -8911,3 +8911,21 @@ textarea.form-control {
     opacity: 0;
   }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(256,256,256,0.25);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(256,256,256,0.5);
+  border-radius: 10px;
+}
