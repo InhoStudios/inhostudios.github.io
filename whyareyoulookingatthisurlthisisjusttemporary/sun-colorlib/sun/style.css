@@ -23,7 +23,7 @@ body a
 
 body a:hover
 {
-    color: #FD3137;
+    color: #8dabc4;
 }
 
 input, textarea, select 
@@ -139,7 +139,7 @@ input, textarea, select
 .sm-clean a.highlighted, .sm-clean ul a:hover, .sm-clean ul a:focus, 
 .sm-clean ul a:active, .sm-clean ul a.highlighted, .sm-clean .current_page_item a
 {
-    color: #FD3137;
+    color: #8dabc4;
 }
 
 .sub-arrow
@@ -217,7 +217,7 @@ ul.slides li img
 {
     cursor: pointer;
     zoom: 1.1;
-    color: #fd3137;
+    color: #8dabc4;
 }
 
 .caroufredsel_wrapper:before 
@@ -238,12 +238,12 @@ ul.slides li img
 
 .carousel_pagination a:hover
 {
-    background-color: #FD3137;
+    background-color: #8dabc4;
 }
 
 .carousel_pagination a.selected
 {
-    background-color: #FD3137;
+    background-color: #8dabc4;
 }
 
 .page-desc
@@ -280,7 +280,7 @@ ul.slides li img
 
 .blog-item-holder:hover .entry-title a
 {
-    color: #FD3137;
+    color: #8dabc4;
 }
 
 .blog-item-holder.sticky
@@ -313,8 +313,8 @@ ul.slides li img
 
 .blog-holder .cat-links a
 {
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #8dabc4;
+    border: 3px solid #8dabc4;
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
@@ -354,8 +354,8 @@ ul.slides li img
 
 body.blog .more-posts
 {
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #8dabc4;
+    border: 3px solid #8dabc4;
     padding: 25px 10px;
     display: block;
     cursor: pointer;
@@ -411,12 +411,12 @@ body.blog .more-posts:hover span
 .single-post .post-info .post-author a
 {
     text-decoration: none;
-    color: #FD3137;
+    color: #8dabc4;
 }
 
 .single-post .post-info  .post-num-comments a
 {
-    color: #FD3137;
+    color: #8dabc4;
     text-decoration: none;
 }
 
@@ -446,8 +446,8 @@ body.blog .more-posts:hover span
 
 .single-post .cat-links a
 {
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #8dabc4;
+    border: 3px solid #8dabc4;
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
@@ -497,7 +497,7 @@ body.blog .more-posts:hover span
 
 .single-post .wp-link-pages
 {
-    color: #FD3137;
+    color: #8dabc4;
 }
 
 .single-post .nav-links
@@ -559,7 +559,7 @@ ul.archive-list li:first-child
 ul.archive-list li span
 {
     font-weight: 700;
-    color: #fd3137;
+    color: #8dabc4;
 }
 
 /* END ABOUT PAGE */
@@ -582,12 +582,12 @@ ul.archive-list li span
 
 .filters-button-group .button.is-checked
 {
-    color: #FD3137;  
+    color: #8dabc4;  
 }
 
 .filters-button-group .button:hover
 {
-    color: #FD3137;
+    color: #8dabc4;
     cursor: pointer;
 }
 
@@ -750,8 +750,8 @@ div.pp_default .pp_loaderIcon
 }
 .contact-form input[type=submit]:hover
 {
-    color: #FD3137;
-    border-color: #FD3137;
+    color: #8dabc4;
+    border-color: #8dabc4;
 }
 
 .contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
@@ -803,7 +803,7 @@ div.pp_default .pp_loaderIcon
 
 .footer .fa-heart
 {
-    color: #fd3137;
+    color: #8dabc4;
     -webkit-animation: pulse 1s linear infinite;
     -moz-animation: pulse 1s linear infinite;
     -ms-animation: pulse 1s linear infinite;

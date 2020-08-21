@@ -206,7 +206,7 @@
 }
 blockquote
 {
-    border-left: 10px solid #FD3137;
+    border-left: 10px solid #8dabc4;
     padding-left: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -239,8 +239,8 @@ iframe
 a.button
 {
     display: inline-block;
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #8dabc4;
+    border: 3px solid #8dabc4;
     text-align: center;
     padding: 15px 40px;
     cursor: pointer;
@@ -256,7 +256,7 @@ a.button:active
 a.button:hover
 {
     color: white;
-    background-color: #FD3137;
+    background-color: #8dabc4;
 }
 h1,h2,h3,h4,h5,h6
 {
