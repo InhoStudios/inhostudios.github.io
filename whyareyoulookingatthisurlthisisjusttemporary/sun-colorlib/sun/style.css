@@ -662,6 +662,11 @@ ul.archive-list li span
     display: none;    
 }
 
+.portfolio-bg-dark
+{
+    background-color: #E2E0E0;
+}
+
 .grid-item a:hover
 {
     color: #191919;
