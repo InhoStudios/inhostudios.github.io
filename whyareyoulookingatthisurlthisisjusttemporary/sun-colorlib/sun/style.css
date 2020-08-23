@@ -6,12 +6,12 @@ html
 body
 {
     background-color: #E2E0E0;
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     font-size: 20px; 	
     line-height: 35px;
-    font-weight: 400;	
     color: #191919;
-    letter-spacing: -1px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 body a
@@ -31,10 +31,17 @@ input, textarea, select
     -webkit-appearance: none;
 }
 
+@font-face {
+    font-family: Dosis;
+    font-weight: 100;
+    src: local(Dosis),
+        url('fonts/Dosis-Light.woff') format('woff');
+}
+
 .body-wrapper
 {
     margin: 45px;
-    background-color: #fff;
+    background-color: #F7F4ED;
     position: relative;
 }
 
@@ -87,34 +94,34 @@ input, textarea, select
     background: transparent;
     border-bottom: 2px solid #a1a1a1;
     color: #a1a1a1;
-    font-weight: 400;
+    font-weight: 100;
     max-width: 80%;
 }
 
 .search-field::-webkit-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #a1a1a1;
-    font-weight: 400;
+    font-weight: 100;
 }
 .search-field::-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #a1a1a1;
-    font-weight: 400;
+    font-weight: 100;
     opacity: 1;
 }
 .search-field:-ms-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #a1a1a1;
-    font-weight: 400;
+    font-weight: 100;
 }
 .search-field:-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #a1a1a1;
-    font-weight: 400;
+    font-weight: 100;
     opacity: 1;
 }
 
@@ -246,9 +253,15 @@ ul.slides li img
     background-color: #8dabc4;
 }
 
+.page-header h3
+{
+    padding-bottom: 70px;
+    text-decoration: underline;
+}
+
 .page-desc
 {
-    width: 925px;
+    width: 1280px;
     float: right;
     font-size: 24px;
     line-height: 40px;
@@ -317,7 +330,7 @@ ul.slides li img
     border: 3px solid #8dabc4;
     text-decoration: none;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .blog-holder .entry-date
@@ -359,7 +372,7 @@ body.blog .more-posts
     padding: 25px 10px;
     display: block;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 28px;
 }
 
@@ -391,7 +404,7 @@ body.blog .more-posts:hover span
 {
     width: 870px;
     float: right;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 46px;
     line-height: 55px;
     letter-spacing: -2px;
@@ -450,7 +463,7 @@ body.blog .more-posts:hover span
     border: 3px solid #8dabc4;
     text-decoration: none;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .single-post .cat-links
@@ -475,7 +488,7 @@ body.blog .more-posts:hover span
     border: 3px solid #b5b5b5;
     text-decoration: none;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 10px;
     display: inline-block;
 }
@@ -526,7 +539,7 @@ body.blog .more-posts:hover span
 
 .single-post .nav-previous a, .single-post .nav-next a
 {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 24px;
     line-height: 24px;
     display: block;
@@ -535,7 +548,7 @@ body.blog .more-posts:hover span
 .single-post .nav-previous-text, .single-post .nav-next-text
 {
     color: #b5b5b5;
-    font-weight: 700;
+    font-weight: 300;
     padding-bottom: 30px;
 }
 
@@ -558,7 +571,7 @@ ul.archive-list li:first-child
 
 ul.archive-list li span
 {
-    font-weight: 700;
+    font-weight: 300;
     color: #8dabc4;
 }
 
@@ -656,7 +669,7 @@ ul.archive-list li span
     bottom: 30px;
     right: 30px;
     z-index: 1;
-    font-size: 20px;
+    font-size: 35px;
     background-color: white;
     text-align: center;   
     display: none;    
@@ -684,7 +697,7 @@ div.pp_default .pp_loaderIcon
 
 .single-portfolio h1.entry-title
 {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 46px;
     line-height: 55px;
     letter-spacing: -2px;
@@ -718,7 +731,7 @@ div.pp_default .pp_loaderIcon
     margin: 30px 0;
     height: 28px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     width: 100%;
     line-height: 25px;
     text-transform: uppercase;
@@ -746,8 +759,8 @@ div.pp_default .pp_loaderIcon
     vertical-align: middle;
     text-decoration: none;
     background: transparent;
-    font-family: 'Montserrat', sans-serif, Arial;
-    font-weight: 700;
+    font-family: 'Dosis', sans-serif, Arial;
+    font-weight: 300;
     width: 100%;
     text-transform: uppercase;
     font-size: 20px;
@@ -761,34 +774,34 @@ div.pp_default .pp_loaderIcon
 
 .contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #191919;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
 }
 .contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #191919;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     opacity: 1;
 }
 .contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #191919;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
 }
 .contact-form input[type=text]:-moz-placeholder, .contact-form input[type=email]:-moz-placeholder, .contact-form textarea:-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: 'Dosis', sans-serif, Arial;
     color: #191919;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     opacity: 1;
