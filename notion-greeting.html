@@ -33,7 +33,7 @@ h1 {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
-    height: 100vh;
+    height: 90vh;
 }
 
 .card {
@@ -81,12 +81,12 @@ var today = new Date();
 function clock() {
 var today = new Date();
 hrs = today.getHours();
-if (hrs < 12)
-        greet = 'Good morning, Andy';
+if (hrs > 4 && hrs < 12)
+        greet = '⛅ Good morning, Andy';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good afternoon, Andy';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good evening, Andy';
+        greet = '☀️ Good afternoon, Andy';
+    else if ((hrs >= 17 && hrs <= 24) || (hrs >= 0 && hrs <= 4))
+        greet = '🌙 Good evening, Andy';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 }
