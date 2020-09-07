@@ -1,0 +1,120 @@
+<!-- original : https://codepen.io/SeanNorton/pen/LWBXQL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*CSS RESETS*/
+
+        html {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            
+        }
+        
+body{
+    background-color: #2F3437;
+    line-height: 1.6;
+
+}
+
+h1 {
+    margin-top: 0;
+}
+
+
+/*CSS START*/
+
+.full-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    height: 90vh;
+}
+
+.card {
+    padding: 10px 25px 10px 25px;
+    background: rgba(0,0,0,0);
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.greet{
+    
+    min-width: 162px;
+    /* padding-right: 30px; */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Segoe UI" rel="stylesheet">
+
+<div class="full-table">
+  <div class="table-cell">
+    
+    <div class="card">
+        <div class="greet" id="greet"></div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+    function date() {
+var today = new Date();
+}
+
+
+function clock() {
+var today = new Date();
+hrs = today.getHours();
+if (hrs > 4 && hrs < 12)
+        greet = '⛅ Good morning, Chloe';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = '☀️ Good afternoon, Chloe';
+    else if ((hrs >= 17 && hrs <= 24) || (hrs >= 0 && hrs <= 4))
+        greet = '🌙 Good evening, Chloe';
+// console.log(today.toLocaleTimeString());
+document.getElementById('greet').innerHTML = greet;
+}
+
+// adds zero infront of single digit number
+function zeros(num) {
+if (num < 10) {
+    num = '0' + num
+};
+return num;
+}
+
+function dateTime() {
+date();
+clock();
+setTimeout(dateTime, 500);
+}
+
+dateTime()
+// END
+</script>
+
+</body>
+</html>
