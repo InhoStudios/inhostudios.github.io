@@ -130,6 +130,18 @@ a:hover {
 }
 
 .footer a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-section a:hover {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   transition: 0.3s;
