@@ -59,9 +59,9 @@ code {
 }
 
 .crop-img{
-  height: 100% !important;
-  --height: 100% !important;
-  width: calc(var(--height));
+  width: 100% !important;
+  --width: 100% !important;
+  height: calc(var(--width));
   object-fit: cover;
 }
 
