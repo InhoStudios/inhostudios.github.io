@@ -62,7 +62,7 @@ code {
   width: 100% !important;
   --width: 100% !important;
   height: calc(var(--width));
-  max-height: 100vw;
+  max-height: 40vh;
   object-fit: cover;
 }
 
