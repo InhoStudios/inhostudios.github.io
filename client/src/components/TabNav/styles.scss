@@ -1,0 +1,58 @@
+.tab-container {
+  position: relative;
+  border-bottom: 1px solid var(--color-background);
+  .tab-nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .tab {
+      margin: 0.2rem 0.2rem;
+      padding: 0.15rem 0.65rem;
+      border-radius: 0.25rem 0.25rem;
+      color: var(--color-minor);
+      font-size: 1rem;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fff;
+      min-width: 7.1rem;
+      text-align: center;
+      text-decoration: none !important;
+
+      transition: 0.3s;
+
+      &:hover, &:focus {
+        background-color: var(--color-minor);
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &.active {
+        background-color: var(--color-primary);
+        border-radius: 1rem 1rem 0 0;
+        padding: 0.35rem 0.85rem;
+        margin: 0 0;
+        color: #fff;
+        min-width: 7.5rem;
+      }
+    }
+    padding-right: 10%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to right, #ffffff00 0%, #ffffffff 98%);
+      width: 10%;
+    }
+  }
+}

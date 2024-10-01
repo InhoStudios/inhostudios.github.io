@@ -1,0 +1,45 @@
+.nav-container {
+  display: flex;
+  margin-bottom: 5rem;
+  .spacer {
+    flex-grow: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-family: "TisaPro", serif;
+      color: var(--color-minor);
+    }
+  }
+  .nav-button {
+    display: inline-flex;
+
+    z-index: 50;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 5rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+    max-width: 2.8rem;
+    max-height: 2.8rem;
+
+    &:hover {
+      text-decoration: none;
+      color: var(--color-primary);
+      background-color: #fff;
+      cursor: pointer !important;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      color: #fff;
+      background-color: var(--color-background);
+    }
+  }
+}

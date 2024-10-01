@@ -1,0 +1,21 @@
+.tag {
+  background-color: var(--color-secondary-lightest);
+  font-size: var(--body-font-small);
+  font-weight: 700;
+  padding: 2px 12px;
+  padding-bottom: 3px;
+  margin: 0.1rem 0.1rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+
+  span {
+    color: #fff;
+    font-size: var(--body-font-small);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
