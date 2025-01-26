@@ -74,13 +74,10 @@ export function Home() {
                     <u>good.</u>
                   </h2>
                   <p className="about-me-bio">
-                    Hi, I'm <strong>Andy</strong>, a research assistant and a
-                    prospective software engineer. Currently, I'm building a
-                    clinical image gallery as a visual companion for the ICD-11.
-                    Previously, I've conducted{" "}
-                    <strong>computer vision research</strong> in{" "}
-                    <strong>clinical and radiologic (SPECT/CT) imaging</strong>,
-                    leading to several awards at research conferences. In 2021,
+                    Hi, I'm <strong>Andy</strong>, a research assistant specializing in
+                    computer vision research and HCI, a prospective software engineer, 
+                    and a Master's student in Biomedical Engineering, specializing in 
+                    medical imaging and computer vision. In 2021,
                     I invited 48 high school students from across my city to
                     participate in{" "}
                     <strong>
