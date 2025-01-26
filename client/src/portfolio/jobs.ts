@@ -4,7 +4,32 @@ export const Jobs: Job[] = [
   {
     company:
       "Lee Lab — BC Cancer Research Centre & Department of Dermatology and Skin Science (UBC)",
-    date: "May 2021 - Present",
+    date: "Jan 2025 - Present",
+    title: "ILDS Gallery Software Development Team Lead",
+    body: [
+      `Organize and triage tasks for the engineering and development of the ILDS Dermatology gallery`,
+      `Oversee all aspects of the software development team`,
+      `Design and implement software for both front-end and back-end systems of the gallery`
+    ],
+    location: "Vancouver, BC",
+  },
+  {
+    company:
+      "Lee Lab — BC Cancer Research Centre & Department of Dermatology and Skin Science (UBC)",
+    date: "Jan 2025 - Present",
+    title: "Graduate Research Assistant",
+    body: [
+      `Conducting computer vision research on extracting clinical features for skin cancer detection`,
+      `Responsible for reporting research progress and findings to supervisory committee`,
+      `Responsible for maintaining professional conduct in relation to UBC's code of conduct and the 
+      student-supervisor agreement in the UBC School of Biomedical Engineering`,
+    ],
+    location: "Vancouver, BC",
+  },
+  {
+    company:
+      "Lee Lab — BC Cancer Research Centre & Department of Dermatology and Skin Science (UBC)",
+    date: "May 2021 - Dec 2024",
     title: "Undergraduate Research Assistant",
     body: [
       `Designed, engineered, and deployed the <strong>ILDS Dermatology Gallery</strong>, a 

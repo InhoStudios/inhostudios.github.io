@@ -8,9 +8,11 @@ import { Jobs } from "~/portfolio/jobs";
 import { SoftSkills, TechSkills, OfficeSkills } from "~/portfolio/skills";
 import { minScroll, useScroll } from "~/utilities/useScroll";
 import { JobCard } from "./JobCard";
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
   const { stuck } = useScroll(minScroll);
+  const navigate = useNavigate();
   const [scrolledToExp, setScrolledToExp] = useState(false);
 
   const homeRef = useRef<HTMLDivElement>(null);
@@ -18,6 +20,10 @@ export function Home() {
   const expRef = useRef<HTMLDivElement>(null);
 
   const scrollOffset = "6rem";
+
+  useEffect(() => {
+    scrollHome();
+  }, []);
 
   const scrollHome = () => {
     setScrolledToExp(false);
@@ -137,16 +143,26 @@ export function Home() {
               <div className="scroll-anchor" id="projects" ref={projRef}></div>
               <h1 className="mt-5 flex-fill">Projects</h1>
               <div className="row">
-                {Projects.slice(1, 8).map(project => (
+                {Projects.slice(1, 7).map(project => (
                   <ProjectCard project={project} />
                 ))}
-                <div className="col-sm-3 project-card"></div>
-                <div className="col-sm-3 project-card"></div>
-                <div className="col-sm-3 project-card"></div>
+                <div className="info disabled"></div>
+                <div className="info disabled"></div>
+                <div className="info disabled"></div>
               </div>
               <div className="row">
-                <div className="text-right">
-                  <a>More Projects</a>
+                <div className="col-auto flex-fill"></div>
+                <div className="col-auto">
+                  <a
+                    href="/"
+                    className="info"
+                    onClick={e => {
+                      e.preventDefault();
+                      navigate("projects");
+                    }}
+                  >
+                    <strong>+ More Projects</strong>
+                  </a>
                 </div>
               </div>
             </div>

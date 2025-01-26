@@ -40,7 +40,7 @@ export function ProjectCard({ project, fullWidth }: ProjectCardProps) {
           </p>
           <h3>{project.title}</h3>
           <h4>{project.subtitle_objective}</h4>
-          <p>
+          <p className="mt-4">
             {project.body.split(".")[0]}.{" "}
             <strong>{project.body.split(".")[1]}</strong>
           </p>

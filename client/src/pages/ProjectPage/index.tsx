@@ -35,6 +35,7 @@ export function ProjectPage() {
         }
       });
       setSections(sections);
+      setActiveSection(sections[0]);
     }
   }, [project]);
 
@@ -46,7 +47,6 @@ export function ProjectPage() {
       lowestY = rect.top;
       if (rect.top < 300) {
         setActiveSection(sections[i]);
-        console.log(i, sections[i]);
         break;
       }
     }

@@ -24,6 +24,19 @@ export const Projects: Project[] = [
     id: "difficult-conversations",
   },
   {
+    title: "The ILDS Gallery",
+    subtitle_objective:
+      "A free, standardized repository of high quality clinical images",
+    subtitle_date: "2021-2025",
+    body: `The ILDS Dermatology Gallery is intented to serve as a visual companion
+    for the ICD-11. I designed the initial prototype, built the entire application platform, 
+    liased with consultants for deployment and cybersecurity, and communicated and presented to stakeholders.`,
+    techused: ["Node.JS", "React", "Express", "MySQL", "Apache", "Typescript"],
+    url: "/project/1",
+    localUrl: true,
+    id: "gallery",
+  },
+  {
     title: "Bullet",
     subtitle_objective: "A service for coordinating calendars",
     subtitle_date: "2021-2024",
@@ -31,7 +44,7 @@ export const Projects: Project[] = [
     I built Bullet, a Discord chatbot, so my friends and I could quickly see each others academic and work schedules,
     allowing us to more easily coordinate time to hang out.`,
     techused: ["Python"],
-    url: "/project/1",
+    url: "/project/2",
     id: "bullet",
     localUrl: true,
   },
@@ -92,17 +105,6 @@ export const Projects: Project[] = [
     techused: ["Java", "Android", "Python", "Tensorflow"],
     url: "https://devpost.com/software/stride-fs0ncy",
     id: "stride-ml",
-  },
-  {
-    title: "The ILDS Gallery",
-    subtitle_objective:
-      "A free, standardized repository of high quality clinical images",
-    subtitle_date: "2021-2024",
-    body: `The ILDS Dermatology Gallery is intented to serve as a visual companion
-    for the ICD-11. I designed the initial prototype, built the entire application platform, 
-    liased with consultants for deployment and cybersecurity, and communicated and presented to stakeholders.`,
-    techused: ["Node.JS", "React", "Express", "MySQL", "Apache", "Typescript"],
-    id: "ilds-gallery",
   },
 ];
 

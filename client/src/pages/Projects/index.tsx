@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles.scss";
 import { ProjectCard } from "~/pages/Home/ProjectCard";
 import { Projects } from "~/portfolio/projects";
@@ -6,6 +6,16 @@ import { Projects } from "~/portfolio/projects";
 export function ProjectsPage() {
   const homeRef = useRef<HTMLDivElement>(null);
   const projRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    scrollHome();
+  }, []);
+
+  const scrollHome = () => {
+    if (homeRef.current) {
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section>
@@ -34,11 +44,13 @@ export function ProjectsPage() {
               {Projects.slice(1).map(project => (
                 <ProjectCard project={project} />
               ))}
-              <div className="col-sm-3 project-card"></div>
-              <div className="col-sm-3 project-card"></div>
-              <div className="col-sm-3 project-card"></div>
-              <div className="col-sm-3 project-card"></div>
-              <div className="col-sm-3 project-card"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
+              <div className="info disabled"></div>
             </div>
           </div>
         </div>

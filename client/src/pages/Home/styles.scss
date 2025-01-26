@@ -21,6 +21,11 @@
     margin-bottom: 1rem;
   }
 
+  a {
+    text-decoration: none;
+    color: var(--color-body);
+  }
+
   @media (min-width: 1400px) {
     .intro {
       position: fixed;

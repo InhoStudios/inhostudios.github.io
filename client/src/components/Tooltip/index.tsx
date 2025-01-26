@@ -36,7 +36,11 @@ export function CursorTooltip({ content, children }: CursorTooltipProps) {
   };
 
   return (
-    <div className="cursor-tooltip" onMouseMove={handleMouseMove}>
+    <div
+      className="cursor-tooltip"
+      onMouseMove={handleMouseMove}
+      onMouseOver={handleMouseMove}
+    >
       {children}
       {!!content ? (
         <span
