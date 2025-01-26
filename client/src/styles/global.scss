@@ -68,6 +68,7 @@
   --body-font-small: 0.9rem;
   --big-header: 5.5rem;
   --medium-header: 3.5rem;
+  --small-header: 2rem;
   --big-shadow: 0px 75px 200px -5px rgba(102, 102, 102, 0.56);
   --shadow-tight: 0 0 20px rgba(102, 102, 102, 0.56);
 
@@ -79,7 +80,7 @@
 
 html {
   font-family: "Atkinson Hyperlegible", "Helvetica", sans-serif !important;
-  background-color: var(--color-background);
+  background-color: #fff;
 }
 
 body {
@@ -88,7 +89,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-body);
-  background-color: var(--color-background);
+  background-color: #fff;
 }
 
 h1,
@@ -135,13 +136,15 @@ code {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  background-color: var(--color-background);
 }
+
 .container-article {
   width: 100%;
   max-width: 1128px;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--color-background-darker);
+  background-color: var(--color-background);
 }
 
 // CLASS-LEVEL ELEMENT STYLES
@@ -151,6 +154,10 @@ code {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .round {

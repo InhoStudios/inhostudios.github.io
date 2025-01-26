@@ -1,39 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Throbber } from "./components/Throbber";
-import { getHID, initUser } from "~/utilities/auth";
 import { ToastContainer } from "~/components/Toast";
+import { Layout } from "./components/Layout";
+import { ProjectPage } from "./pages/ProjectPage";
+import { ProjectsPage } from "./pages/Projects";
 
 export function App() {
-  const [loaded, setLoaded] = useState(false);
-
-  const loadUser = async () => {
-    const storedTokenString = localStorage.getItem("token");
-
-    if (storedTokenString) {
-      await initUser(JSON.parse(storedTokenString));
-    }
-
-    setLoaded(true);
-  };
-
-  useEffect(() => {
-    // generate machine ID
-    getHID();
-    loadUser();
-  }, []);
-
-  if (!loaded) {
-    return <Throbber />;
-  }
-
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route element={<Layout />}>
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="project/:index" element={<ProjectPage />} />
+        </Route>
       </Routes>
       <ToastContainer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }

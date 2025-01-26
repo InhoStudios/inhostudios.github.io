@@ -6,12 +6,16 @@
     overflow-y: hidden;
     pointer-events: none;
     transition: var(--default-transition);
+    padding-right: 1rem;
 
     &.expanded {
-      max-height: 50rem;
+      pointer-events: all;
+      max-height: 60rem;
     }
   }
+
   .responsibility {
+    margin-top: 0.5rem;
     padding-left: 1.25rem;
     text-indent: -1.25rem;
   }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const minScroll = 50;
+export const minScroll = 100;
 
 export function useScroll(stuckHeight: number) {
   const [scrollPosition, setScrollPosition] = useState(0);

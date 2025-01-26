@@ -3,12 +3,14 @@ import { Navbar } from "~/components/Navbar";
 import "./styles.scss";
 import { ProjectCard } from "./ProjectCard";
 import { TagChip } from "~/components/TagChip";
-import { Jobs, Projects, SoftSkills, TechLangs, TechSkills } from "~/projects";
+import { Projects } from "~/portfolio/projects";
+import { Jobs } from "~/portfolio/jobs";
+import { SoftSkills, TechSkills, OfficeSkills } from "~/portfolio/skills";
 import { minScroll, useScroll } from "~/utilities/useScroll";
 import { JobCard } from "./JobCard";
 
 export function Home() {
-  const { scrollPosition, stuck } = useScroll(minScroll);
+  const { stuck } = useScroll(minScroll);
   const [scrolledToExp, setScrolledToExp] = useState(false);
 
   const homeRef = useRef<HTMLDivElement>(null);
@@ -20,7 +22,7 @@ export function Home() {
   const scrollHome = () => {
     setScrolledToExp(false);
     if (homeRef.current) {
-      homeRef.current.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
   const scrollProj = () => {
@@ -32,9 +34,9 @@ export function Home() {
   };
   const scrollExp = () => {
     setScrolledToExp(scrolled => !scrolled);
-    if (expRef.current) {
-      expRef.current.style.scrollMargin = scrollOffset;
-      expRef.current.scrollIntoView({ behavior: "smooth" });
+    if (homeRef.current) {
+      homeRef.current.style.scrollMargin = scrollOffset;
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -91,12 +93,12 @@ export function Home() {
                       ))}
                     </p>
                     <p>
-                      {TechLangs.map(skill => (
+                      {TechSkills.map(skill => (
                         <TagChip index={0} value={skill} deletable={false} />
                       ))}
                     </p>
                     <p>
-                      {TechSkills.map(skill => (
+                      {OfficeSkills.map(skill => (
                         <TagChip index={0} value={skill} deletable={false} />
                       ))}
                     </p>
@@ -105,7 +107,7 @@ export function Home() {
               </div>
               <div className="scroll-anchor" id="experience" ref={expRef}></div>
               <div
-                className={`row about-me-experience ${scrolledToExp ? "show-exp" : "mt-5"}`}
+                className={`row about-me-experience mt-5 ${scrolledToExp ? "show-exp" : ""}`}
               >
                 <h1>Experience</h1>
                 <div className="row">
@@ -119,29 +121,33 @@ export function Home() {
             <div className="col-xxl-8 offset-xxl-4 projects">
               <h1>Featured</h1>
               <div className="row">
-
-              <div className="col-lg-8">
-                <iframe
-                  className="round column-video"
-                  src="https://www.youtube.com/embed/GIavsfXtE-w"
-                  title="how we made difficult conversations easier."
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen={true}
-                ></iframe>
-              </div>
-              <div className="col-lg-4">
-                <ProjectCard project={Projects[0]} fullWidth={true} />
+                <div className="col-lg-8">
+                  <iframe
+                    className="round column-video mb-5"
+                    src="https://www.youtube.com/embed/GIavsfXtE-w"
+                    title="how we made difficult conversations easier."
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen={true}
+                  ></iframe>
+                </div>
+                <div className="col-lg-4 featured-project">
+                  <ProjectCard project={Projects[0]} fullWidth={true} />
                 </div>
               </div>
               <div className="scroll-anchor" id="projects" ref={projRef}></div>
-              <h1 className="mt-5">Projects</h1>
+              <h1 className="mt-5 flex-fill">Projects</h1>
               <div className="row">
-                {Projects.slice(1, 7).map(project => (
+                {Projects.slice(1, 8).map(project => (
                   <ProjectCard project={project} />
                 ))}
                 <div className="col-sm-3 project-card"></div>
                 <div className="col-sm-3 project-card"></div>
                 <div className="col-sm-3 project-card"></div>
+              </div>
+              <div className="row">
+                <div className="text-right">
+                  <a>More Projects</a>
+                </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Job } from "~/projects";
+import { Job } from "~/portfolio/types";
 import "./styles.scss";
 import { CursorTooltip } from "~/components/Tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +26,7 @@ export function JobCard({ job, fullWidth }: JobCardProps) {
           setExpanded(expanded => !expanded);
         }}
       >
-        <CursorTooltip content={expanded ? "Collapse" : "See more"}>
+        {/* <CursorTooltip content={expanded ? "Collapse" : "See more"}> */}
           <p className="project-date">{job.date}</p>
           <h3 className="flex-fill">
             {job.title}&ensp;
@@ -40,18 +40,23 @@ export function JobCard({ job, fullWidth }: JobCardProps) {
             )}
           </h3>
           <h4>{job.company}</h4>
-          <p className="location">
+          {/* <p className="location">
             <span>
               <FontAwesomeIcon icon={faLocationDot} />
             </span>
             &ensp;<strong>{job.location}</strong>
-          </p>
+          </p> */}
           <div className={`responsibilities ${expanded ? "expanded" : ""}`}>
-            {job.body.map(resp => (
-              <p className="responsibility">&ensp;·&ensp;{resp}</p>
-            ))}
+            <div>
+              {job.body.map(resp => (
+                <p
+                  className="responsibility"
+                  dangerouslySetInnerHTML={{ __html: `&ensp;·&ensp;${resp}` }}
+                ></p>
+              ))}
+            </div>
           </div>
-        </CursorTooltip>
+        {/* </CursorTooltip> */}
       </a>
     </div>
   );

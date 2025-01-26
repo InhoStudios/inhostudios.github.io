@@ -63,12 +63,12 @@ export function Navbar({ scrollHome, scrollProj, scrollExp }: NavbarProps) {
               }}
               className="nav-link"
             >
-              About Me
+              {scrollHome ? "About Me" : "Home"}
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="#projects"
+              to="/projects"
               onClick={e => {
                 scrollProj && e.preventDefault();
                 scrollProj && scrollProj();
