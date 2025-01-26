@@ -1,0 +1,174 @@
+import React, { useEffect, useRef, useState } from "react";
+import { Navbar } from "~/components/Navbar";
+import "./styles.scss";
+import { ProjectCard } from "./ProjectCard";
+import { TagChip } from "~/components/TagChip";
+import { Projects } from "~/portfolio/projects";
+import { Jobs } from "~/portfolio/jobs";
+import { SoftSkills, TechSkills, OfficeSkills } from "~/portfolio/skills";
+import { minScroll, useScroll } from "~/utilities/useScroll";
+import { JobCard } from "./JobCard";
+import { useNavigate } from "react-router-dom";
+
+export function Home() {
+  const { stuck } = useScroll(minScroll);
+  const navigate = useNavigate();
+  const [scrolledToExp, setScrolledToExp] = useState(false);
+
+  const homeRef = useRef<HTMLDivElement>(null);
+  const projRef = useRef<HTMLDivElement>(null);
+  const expRef = useRef<HTMLDivElement>(null);
+
+  const scrollOffset = "6rem";
+
+  useEffect(() => {
+    scrollHome();
+  }, []);
+
+  const scrollHome = () => {
+    setScrolledToExp(false);
+    if (homeRef.current) {
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollProj = () => {
+    setScrolledToExp(false);
+    if (projRef.current) {
+      projRef.current.style.scrollMargin = scrollOffset;
+      projRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollExp = () => {
+    setScrolledToExp(scrolled => !scrolled);
+    if (homeRef.current) {
+      homeRef.current.style.scrollMargin = scrollOffset;
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <>
+      <Navbar
+        scrollHome={scrollHome}
+        scrollProj={scrollProj}
+        scrollExp={scrollExp}
+      />
+      <section>
+        <div className="container-page">
+          <div className="scroll-anchor" id="home" ref={homeRef}></div>
+          <div className="row home">
+            <div
+              className={`col-xxl-4 intro hide-scroll ${stuck ? "stuck" : ""}`}
+            >
+              <div className="row">
+                <div
+                  className={`about-me ${scrolledToExp ? "hide-about" : ""}`}
+                >
+                  <img
+                    src={`${process.env.PUBLIC_URL}/headshot.jpg`}
+                    alt="headshot"
+                  />
+                  <h1 className="name">Andy Zhao.</h1>
+                  <h2 className="sub-heading">
+                    Engineering for social <s>goof</s>
+                    <u>good.</u>
+                  </h2>
+                  <p className="about-me-bio">
+                    Hi, I'm <strong>Andy</strong>, a research assistant and a
+                    prospective software engineer. Currently, I'm building a
+                    clinical image gallery as a visual companion for the ICD-11.
+                    Previously, I've conducted{" "}
+                    <strong>computer vision research</strong> in{" "}
+                    <strong>clinical and radiologic (SPECT/CT) imaging</strong>,
+                    leading to several awards at research conferences. In 2021,
+                    I invited 48 high school students from across my city to
+                    participate in{" "}
+                    <strong>
+                      Vancouver's premiere high school hackathon, vhHacks.
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  className={`row mt-5 about about-me-skills ${scrolledToExp ? "hide-skills" : ""}`}
+                >
+                  <h1>Skills</h1>
+                  <div className="col-xxl-8">
+                    <p>
+                      {SoftSkills.map(skill => (
+                        <TagChip index={0} value={skill} deletable={false} />
+                      ))}
+                    </p>
+                    <p>
+                      {TechSkills.map(skill => (
+                        <TagChip index={0} value={skill} deletable={false} />
+                      ))}
+                    </p>
+                    <p>
+                      {OfficeSkills.map(skill => (
+                        <TagChip index={0} value={skill} deletable={false} />
+                      ))}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="scroll-anchor" id="experience" ref={expRef}></div>
+              <div
+                className={`row about-me-experience mt-5 ${scrolledToExp ? "show-exp" : ""}`}
+              >
+                <h1>Experience</h1>
+                <div className="row">
+                  {Jobs.map(job => (
+                    <JobCard job={job} />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xxl-8 offset-xxl-4 projects">
+              <h1>Featured</h1>
+              <div className="row">
+                <div className="col-lg-8">
+                  <iframe
+                    className="round column-video mb-5"
+                    src="https://www.youtube.com/embed/GIavsfXtE-w"
+                    title="how we made difficult conversations easier."
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen={true}
+                  ></iframe>
+                </div>
+                <div className="col-lg-4 featured-project">
+                  <ProjectCard project={Projects[0]} fullWidth={true} />
+                </div>
+              </div>
+              <div className="scroll-anchor" id="projects" ref={projRef}></div>
+              <h1 className="mt-5 flex-fill">Projects</h1>
+              <div className="row">
+                {Projects.slice(1, 7).map(project => (
+                  <ProjectCard project={project} />
+                ))}
+                <div className="info disabled"></div>
+                <div className="info disabled"></div>
+                <div className="info disabled"></div>
+              </div>
+              <div className="row">
+                <div className="col-auto flex-fill"></div>
+                <div className="col-auto">
+                  <a
+                    href="/"
+                    className="info"
+                    onClick={e => {
+                      e.preventDefault();
+                      navigate("projects");
+                    }}
+                  >
+                    <strong>+ More Projects</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

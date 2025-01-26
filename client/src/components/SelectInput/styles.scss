@@ -1,0 +1,11 @@
+.select-input-empty {
+  color: #6c757d;
+
+  &:focus {
+    color: #6c757d;
+  }
+
+  option {
+    color: #212529;
+  }
+}

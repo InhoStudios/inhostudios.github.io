@@ -1,0 +1,11 @@
+.overlay-leaf {
+  position: fixed;
+  top: 80vh;
+  pointer-events: none;
+  z-index: 1000;
+  img {
+    left: 0;
+    width: 15rem;
+    height: auto;
+  }
+}

@@ -1,0 +1,11 @@
+.ilds-footer-dark {
+  background-color: var(--color-primary);
+  color: #fff;
+  min-height: 20rem;
+
+  .footer-container {
+    width: 80vw;
+    padding-top: 3rem;
+    margin-left: calc((100% - 80vw) / 2);
+  }
+}
