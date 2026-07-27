@@ -58,11 +58,11 @@
       }
 
       &.stuck {
-        max-height: calc(100vh - 12rem);
-        margin-top: 5.5rem !important;
+        max-height: calc(100vh - 9.8rem);
+        margin-top: 3.7rem !important;
 
         .about-me {
-          margin-top: 2rem !important;
+          margin-top: 0 !important;
         }
 
         .about-me-experience {
@@ -88,7 +88,21 @@
     transition: var(--default-transition);
     padding-top: 3rem;
     .name {
+      span {
+        color: var(--color-header);
+        text-decoration: none;
+      }
       font-size: var(--big-header);
+    }
+    .qualification-bar {
+      background-color: var(--color-secondary-lighter);
+      border-radius: var(--default-corner-rounding);
+      * {
+        color: var(--color-background);
+      }
+      span {
+        font-size: var(--body-font-small);
+      }
     }
     img {
       max-width: 16rem;

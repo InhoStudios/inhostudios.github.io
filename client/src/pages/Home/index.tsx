@@ -6,6 +6,7 @@ import { TagChip } from "~/components/TagChip";
 import { Jobs, Projects, SoftSkills, TechLangs, TechSkills } from "~/projects";
 import { minScroll, useScroll } from "~/utilities/useScroll";
 import { JobCard } from "./JobCard";
+import { AboutMe } from "./AboutMe";
 
 export function Home() {
   const { scrollPosition, stuck } = useScroll(minScroll);
@@ -52,57 +53,7 @@ export function Home() {
             <div
               className={`col-xxl-4 intro hide-scroll ${stuck ? "stuck" : ""}`}
             >
-              <div className="row">
-                <div
-                  className={`about-me ${scrolledToExp ? "hide-about" : ""}`}
-                >
-                  <img
-                    src={`${process.env.PUBLIC_URL}/headshot.jpg`}
-                    alt="headshot"
-                  />
-                  <h1 className="name">Andy Zhao.</h1>
-                  <h2 className="sub-heading">
-                    Engineering for social <s>goof</s>
-                    <u>good.</u>
-                  </h2>
-                  <p className="about-me-bio">
-                    Hi, I'm <strong>Andy</strong>, a research assistant and a
-                    prospective software engineer. Currently, I'm building a
-                    clinical image gallery as a visual companion for the ICD-11.
-                    Previously, I've conducted{" "}
-                    <strong>computer vision research</strong> in{" "}
-                    <strong>clinical and radiologic (SPECT/CT) imaging</strong>,
-                    leading to several awards at research conferences. In 2021,
-                    I invited 48 high school students from across my city to
-                    participate in{" "}
-                    <strong>
-                      Vancouver's premiere high school hackathon, vhHacks.
-                    </strong>
-                  </p>
-                </div>
-                <div
-                  className={`row mt-5 about about-me-skills ${scrolledToExp ? "hide-skills" : ""}`}
-                >
-                  <h1>Skills</h1>
-                  <div className="col-xxl-8">
-                    <p>
-                      {SoftSkills.map(skill => (
-                        <TagChip index={0} value={skill} deletable={false} />
-                      ))}
-                    </p>
-                    <p>
-                      {TechLangs.map(skill => (
-                        <TagChip index={0} value={skill} deletable={false} />
-                      ))}
-                    </p>
-                    <p>
-                      {TechSkills.map(skill => (
-                        <TagChip index={0} value={skill} deletable={false} />
-                      ))}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <AboutMe hidden={scrolledToExp} />
               <div className="scroll-anchor" id="experience" ref={expRef}></div>
               <div
                 className={`row about-me-experience ${scrolledToExp ? "show-exp" : "mt-5"}`}
