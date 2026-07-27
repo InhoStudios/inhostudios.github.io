@@ -1,9 +1,8 @@
 /*!
-Copyright (c) 2011, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.9.0
-*/
+ * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
 
 /**
  * @fileOverview
@@ -55,7 +54,7 @@ version: 2.9.0
  */
 
 /**
- * @remix-run/router v1.17.0
+ * @remix-run/router v1.23.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -66,7 +65,7 @@ version: 2.9.0
  */
 
 /**
- * React Router DOM v6.24.0
+ * React Router DOM v6.30.4
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -77,7 +76,7 @@ version: 2.9.0
  */
 
 /**
- * React Router v6.24.0
+ * React Router v6.30.4
  *
  * Copyright (c) Remix Software Inc.
  *
