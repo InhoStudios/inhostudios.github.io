@@ -1,15 +1,8 @@
-import {
-  faDesktop,
-  faDiagramProject,
-  faMicroscope,
-  faPersonChalkboard,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { TagChip } from "~/components/TagChip";
-import { CursorTooltip } from "~/components/Tooltip";
 import { SoftSkills, TechLangs, TechSkills } from "~/projects";
 import { Tooltip } from "@mui/material";
+import { Biotech, Code, Gradient, HistoryEdu } from "@mui/icons-material";
 
 interface AboutMeProps {
   hidden?: boolean;
@@ -38,9 +31,7 @@ export function AboutMe({ hidden }: AboutMeProps) {
             placement={"top"}
           >
             <div className="col-3 item">
-              <h2>
-                <FontAwesomeIcon icon={faMicroscope} />
-              </h2>
+              <Biotech fontSize="large" />
               <span className="d-none d-sm-block">Biomedical Engineering</span>
             </div>
           </Tooltip>
@@ -49,9 +40,7 @@ export function AboutMe({ hidden }: AboutMeProps) {
             placement={"top"}
           >
             <div className="col-3 item">
-              <h2>
-                <FontAwesomeIcon icon={faDiagramProject} />
-              </h2>
+              <Gradient fontSize="large" />
               <span className="d-none d-sm-block">AI + Medical Imaging</span>
             </div>
           </Tooltip>
@@ -60,17 +49,13 @@ export function AboutMe({ hidden }: AboutMeProps) {
             placement={"top"}
           >
             <div className="col-3 item">
-              <h2>
-                <FontAwesomeIcon icon={faDesktop} />
-              </h2>
+              <Code fontSize="large" />
               <span className="d-none d-sm-block">Software Engineer</span>
             </div>
           </Tooltip>
           <Tooltip title="Interaction Design @ UBC" placement={"top"}>
             <div className="col-3 item">
-              <h2>
-                <FontAwesomeIcon icon={faPersonChalkboard} />
-              </h2>
+              <HistoryEdu fontSize="large" />
               <span className="d-none d-sm-block">Teaching Assistant</span>
             </div>
           </Tooltip>
