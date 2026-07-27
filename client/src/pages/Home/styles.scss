@@ -95,13 +95,29 @@
       font-size: var(--big-header);
     }
     .qualification-bar {
-      background-color: var(--color-secondary-lighter);
+      background-color: var(--color-secondary);
       border-radius: var(--default-corner-rounding);
-      * {
-        color: var(--color-background);
-      }
       span {
         font-size: var(--body-font-small);
+      }
+      .item {
+        color: var(--color-background);
+        transition: 0.35s ease;
+
+        * {
+          transition: 0.35s ease;
+          color: var(--color-background);
+        }
+
+        &:hover {
+          font-weight: 500;
+          cursor: pointer;
+
+          * {
+            color: #fff !important;
+            text-shadow: 0 0 5px var(--color-secondary-lightest);
+          }
+        }
       }
     }
     img {

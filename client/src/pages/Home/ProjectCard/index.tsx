@@ -3,6 +3,7 @@ import { TagChip } from "~/components/TagChip";
 import "./styles.scss";
 import { Project } from "~/projects";
 import { CursorTooltip } from "~/components/Tooltip";
+import { Tooltip } from "@mui/material";
 
 interface ProjectCardProps {
   project: Project;
@@ -23,18 +24,24 @@ export function ProjectCard({ project, fullWidth }: ProjectCardProps) {
         }}
       >
         {" "}
-        <CursorTooltip content={project.url ? "Learn more" : "Unavailable"}>
-          <p className="project-date">{project.subtitle_date}</p>
-          <h3>{project.title}</h3>
-          <h4>{project.subtitle_objective}</h4>
-          <p>{project.body}</p>
-          <strong>
-            Built with:{" "}
-            {project.techused.map(tech => (
-              <TagChip index={0} value={tech} deletable={false} />
-            ))}
-          </strong>
-        </CursorTooltip>
+        <Tooltip
+          title={project.url ? "Learn more" : "Unavailable"}
+          followCursor
+          placement={"bottom-start"}
+        >
+          <div>
+            <p className="project-date">{project.subtitle_date}</p>
+            <h3>{project.title}</h3>
+            <h4>{project.subtitle_objective}</h4>
+            <p>{project.body}</p>
+            <strong>
+              Built with:{" "}
+              {project.techused.map(tech => (
+                <TagChip index={0} value={tech} deletable={false} />
+              ))}
+            </strong>
+          </div>
+        </Tooltip>
       </a>
     </div>
   );
